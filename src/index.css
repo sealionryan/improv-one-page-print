@@ -2,19 +2,52 @@
 @tailwind components;
 @tailwind utilities;
 
-/* VIP Improv Brand Design System - All colors MUST be HSL */
+/* VIP Improv Brand Design System */
 
 @layer base {
   :root {
-    /* Brand Colors */
-    --vip-purple: 248 22% 42%; /* #4e4489 */
+    /* Typography */
+    --font-heading: 'Poppins', sans-serif;
+    --font-body: 'Karma', serif;
+    
+    /* Extended VIP Brand Colors - HSL Format */
+    --vip-purple-50: 247 36% 97%;
+    --vip-purple-75: 247 28% 93%;
+    --vip-purple-100: 247 28% 89%;
+    --vip-purple-200: 248 25% 78%;
+    --vip-purple-300: 248 24% 67%;
+    --vip-purple-400: 248 23% 56%;
+    --vip-purple-500: 248 22% 45%;
+    --vip-purple: 248 22% 42%; /* Base brand color #4e4489 */
     --vip-purple-dark: 248 22% 32%;
     --vip-purple-darker: 248 22% 22%;
     --vip-purple-light: 248 22% 52%;
-    --vip-orange: 20 100% 73%; /* #FFA77A */
+    --vip-purple-925: 248 25% 18%;
+    --vip-purple-950: 248 30% 12%;
+    
+    --vip-orange: 20 100% 73%; /* Base coral #FFA77A */
+    --vip-orange-50: 20 100% 96%;
+    --vip-orange-100: 20 100% 91%;
+    --vip-orange-200: 20 100% 86%;
+    --vip-orange-300: 20 100% 81%;
     --vip-orange-light: 20 100% 83%;
     --vip-orange-dark: 20 100% 63%;
     --vip-orange-vibrant: 20 95% 68%;
+    --vip-orange-700: 20 89% 52%;
+    --vip-orange-800: 20 78% 43%;
+    
+    /* Neutral palette */
+    --vip-white: 0 0% 100%;
+    --vip-gray-50: 0 0% 98%;
+    --vip-gray-100: 0 0% 96%;
+    --vip-gray-200: 0 0% 93%;
+    --vip-gray-300: 0 0% 88%;
+    --vip-gray-400: 0 0% 74%;
+    --vip-gray-500: 0 0% 62%;
+    --vip-gray-600: 0 0% 46%;
+    --vip-gray-700: 0 0% 38%;
+    --vip-gray-800: 0 0% 26%;
+    --vip-gray-900: 0 0% 13%;
     
     /* Gradients */
     --vip-gradient: linear-gradient(135deg, hsl(var(--vip-purple-darker)), hsl(var(--vip-purple)));
@@ -105,5 +138,69 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+}
+
+/* VIP Component Styles */
+@layer components {
+  .vip-glass-card {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow:
+      0 4px 8px rgba(78, 68, 137, 0.04),
+      0 8px 16px rgba(78, 68, 137, 0.04),
+      0 16px 32px rgba(78, 68, 137, 0.03);
+    transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .vip-glass-card-subtle {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(78, 68, 137, 0.1);
+    box-shadow:
+      0 2px 4px rgba(78, 68, 137, 0.03),
+      0 4px 8px rgba(78, 68, 137, 0.03),
+      0 8px 16px rgba(78, 68, 137, 0.02);
+    transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .vip-heading {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+  
+  .vip-body {
+    font-family: var(--font-body);
+    font-weight: 400;
+  }
+  
+  .vip-shadow-elegant {
+    box-shadow:
+      0 4px 8px rgba(78, 68, 137, 0.05),
+      0 8px 16px rgba(78, 68, 137, 0.04),
+      0 16px 32px rgba(78, 68, 137, 0.03);
+  }
+  
+  .vip-shadow-lifted {
+    box-shadow:
+      0 8px 16px rgba(78, 68, 137, 0.06),
+      0 16px 32px rgba(78, 68, 137, 0.05),
+      0 24px 48px rgba(78, 68, 137, 0.04);
+  }
+}
+
+/* Fallbacks for browsers without backdrop-filter */
+@supports not (backdrop-filter: blur(10px)) {
+  .vip-glass-card {
+    background: rgba(255, 255, 255, 0.95);
+  }
+  
+  .vip-glass-card-subtle {
+    background: rgba(255, 255, 255, 0.9);
   }
 }

@@ -19,18 +19,45 @@ export default {
 		},
 		extend: {
 			colors: {
-				// VIP Brand Colors
+				// Extended VIP Brand Colors
 				'vip-purple': {
+					'50': 'hsl(var(--vip-purple-50))',
+					'75': 'hsl(var(--vip-purple-75))',
+					'100': 'hsl(var(--vip-purple-100))',
+					'200': 'hsl(var(--vip-purple-200))',
+					'300': 'hsl(var(--vip-purple-300))',
+					'400': 'hsl(var(--vip-purple-400))',
+					'500': 'hsl(var(--vip-purple-500))',
 					DEFAULT: 'hsl(var(--vip-purple))',
 					dark: 'hsl(var(--vip-purple-dark))',
 					darker: 'hsl(var(--vip-purple-darker))',
 					light: 'hsl(var(--vip-purple-light))',
+					'925': 'hsl(var(--vip-purple-925))',
+					'950': 'hsl(var(--vip-purple-950))',
 				},
 				'vip-orange': {
+					'50': 'hsl(var(--vip-orange-50))',
+					'100': 'hsl(var(--vip-orange-100))',
+					'200': 'hsl(var(--vip-orange-200))',
+					'300': 'hsl(var(--vip-orange-300))',
 					DEFAULT: 'hsl(var(--vip-orange))',
 					light: 'hsl(var(--vip-orange-light))',
 					dark: 'hsl(var(--vip-orange-dark))',
 					vibrant: 'hsl(var(--vip-orange-vibrant))',
+					'700': 'hsl(var(--vip-orange-700))',
+					'800': 'hsl(var(--vip-orange-800))',
+				},
+				'vip-gray': {
+					'50': 'hsl(var(--vip-gray-50))',
+					'100': 'hsl(var(--vip-gray-100))',
+					'200': 'hsl(var(--vip-gray-200))',
+					'300': 'hsl(var(--vip-gray-300))',
+					'400': 'hsl(var(--vip-gray-400))',
+					'500': 'hsl(var(--vip-gray-500))',
+					'600': 'hsl(var(--vip-gray-600))',
+					'700': 'hsl(var(--vip-gray-700))',
+					'800': 'hsl(var(--vip-gray-800))',
+					'900': 'hsl(var(--vip-gray-900))',
 				},
 				// System Colors
 				border: 'hsl(var(--border))',
