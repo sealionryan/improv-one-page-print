@@ -14,6 +14,12 @@ This is a VIP (Vegas Improv Power) one-pager website built with Vite + React + T
 - `npm run lint` - Run ESLint linting
 - `npm run preview` - Preview production build
 
+**IMPORTANT**: When starting the dev server with `npm run dev`, always use the background operator `&` to avoid timeout issues:
+```bash
+npm run dev &
+```
+This prevents the 120s timeout that occurs when the command waits indefinitely for the server to terminate.
+
 ## Key Architecture & Structure
 
 ### Core Application
