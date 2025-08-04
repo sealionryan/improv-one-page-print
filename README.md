@@ -1,73 +1,124 @@
-# Welcome to your Lovable project
+# VIP One-Pager
 
-## Project info
+A printable one-page marketing document for **Vegas Improv Power** showcasing their improv training services, class options, and benefits for teams and individuals.
 
-**URL**: https://lovable.dev/projects/4611a54e-255b-4a3e-aa32-c160574f4071
+## About This Project
 
-## How can I edit this code?
+This project creates a professionally designed, print-optimized one-pager (612px x 792px) that highlights Vegas Improv Power's offerings in communication, storytelling, team building, and presentation skills through improvisation training.
 
-There are several ways of editing your application.
+## Features
 
-**Use Lovable**
+- **Print-Optimized Layout**: Designed for professional printing and distribution
+- **VIP Brand Integration**: Custom color palette, typography, and glassmorphic design elements
+- **Responsive Content**: Scales appropriately for different viewing contexts
+- **Professional Typography**: Poppins for headings, Karma for body text
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/4611a54e-255b-4a3e-aa32-c160574f4071) and start prompting.
+## Getting Started
 
-Changes made via Lovable will be committed automatically to this repo.
+### Prerequisites
+- Node.js (v16 or higher)
+- npm or yarn
 
-**Use your preferred IDE**
+### Installation
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+1. Clone the repository:
+```bash
+git clone <your-repository-url>
+cd vip-one-pager-lovable
+```
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+2. Install dependencies:
+```bash
+npm install
+```
 
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+3. Start the development server:
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The application will open at `http://localhost:8080`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Available Scripts
 
-**Use GitHub Codespaces**
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run build:dev` - Build for development mode  
+- `npm run lint` - Run ESLint linting
+- `npm run preview` - Preview production build
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Technology Stack
 
-## What technologies are used for this project?
+- **Framework**: React 18 with TypeScript
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS with custom VIP design system
+- **UI Components**: shadcn/ui component library
+- **Typography**: Google Fonts (Poppins, Karma)
+- **Print Optimization**: CSS print media queries
 
-This project is built with:
+## Design System
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+The project follows the VIP brand guidelines documented in:
+- `VIP-STYLE-GUIDE.md` - Brand overview and design principles
+- `VIP-DESIGN-SYSTEM.md` - Detailed component specifications and CSS tokens
 
-## How can I deploy this project?
+### Key Brand Elements
+- **Primary Colors**: VIP Purple (#4E4489) and VIP Coral (#FFA77A)
+- **Typography**: Poppins Bold for headings, Karma Regular for body text
+- **Effects**: Glassmorphic cards with subtle shadows and backdrop blur
 
-Simply open [Lovable](https://lovable.dev/projects/4611a54e-255b-4a3e-aa32-c160574f4071) and click on Share -> Publish.
+## Project Structure
 
-## Can I connect a custom domain to my Lovable project?
+```
+src/
+├── components/
+│   ├── VIPOnePager.tsx     # Main one-pager component
+│   └── ui/                 # shadcn/ui components
+├── pages/
+│   ├── Index.tsx           # Home page wrapper
+│   └── NotFound.tsx        # 404 page
+├── lib/
+│   └── utils.ts            # Utility functions
+└── hooks/                  # Custom React hooks
+```
 
-Yes, you can!
+## Deployment
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Build the project for production:
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+```bash
+npm run build
+```
+
+The built files will be in the `dist/` directory, ready for deployment to any static hosting service.
+
+## Print Usage
+
+The one-pager is optimized for PDF printing and physical distribution:
+- **Fixed dimensions**: 612px x 792px (8.5 x 11 inches at 72 DPI)
+- **PDF-ready**: Exact sizing for standard US Letter format PDF generation
+- **Print-specific CSS**: Removes shadows and optimizes colors for print
+- **Professional layout**: Designed for professional distribution and marketing materials
+
+### PDF Export Instructions
+To save as PDF:
+1. Open the page in your browser
+2. Use browser's Print function (Ctrl/Cmd + P)
+3. Select "Save as PDF" 
+4. Choose "More Settings" → "Paper Size" → "Letter"
+5. Set margins to "None" or "Minimum"
+6. Ensure "Print backgrounds" is enabled
+
+## Contributing
+
+1. Follow the established VIP design system guidelines
+2. Test print layouts before submitting changes
+3. Run `npm run lint` to ensure code quality
+4. Maintain accessibility standards
+
+## Contact
+
+For questions about Vegas Improv Power:
+- Email: info@vegasimprov.com  
+- Phone: 702-847-1111
+- Website: https://vegasimprov.com/

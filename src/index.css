@@ -22,9 +22,26 @@
     --vip-purple-dark: 248 22% 32%;
     --vip-purple-darker: 248 22% 22%;
     --vip-purple-light: 248 22% 52%;
+    --vip-purple-600: 248 22% 38%;
+    --vip-purple-700: 248 22% 35%;
+    --vip-purple-800: 248 22% 28%;
+    --vip-purple-900: 248 22% 25%;
     --vip-purple-925: 248 25% 18%;
     --vip-purple-950: 248 30% 12%;
     
+    /* VIP Coral - sophisticated orange alternative */
+    --vip-coral-50: 20 100% 96%;
+    --vip-coral-100: 20 100% 91%;
+    --vip-coral-200: 20 100% 86%;
+    --vip-coral-300: 20 100% 81%;
+    --vip-coral-400: 20 95% 78%;
+    --vip-coral: 20 100% 73%; /* Base coral #FFA77A */
+    --vip-coral-500: 20 100% 73%;
+    --vip-coral-600: 20 95% 68%;
+    --vip-coral-700: 20 89% 52%; /* Dark enough for white text */
+    --vip-coral-800: 20 78% 43%;
+    
+    /* Keep existing orange for compatibility */
     --vip-orange: 20 100% 73%; /* Base coral #FFA77A */
     --vip-orange-50: 20 100% 96%;
     --vip-orange-100: 20 100% 91%;
