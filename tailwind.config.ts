@@ -19,6 +19,20 @@ export default {
 		},
 		extend: {
 			colors: {
+				// VIP Brand Colors
+				'vip-purple': {
+					DEFAULT: 'hsl(var(--vip-purple))',
+					dark: 'hsl(var(--vip-purple-dark))',
+					darker: 'hsl(var(--vip-purple-darker))',
+					light: 'hsl(var(--vip-purple-light))',
+				},
+				'vip-orange': {
+					DEFAULT: 'hsl(var(--vip-orange))',
+					light: 'hsl(var(--vip-orange-light))',
+					dark: 'hsl(var(--vip-orange-dark))',
+					vibrant: 'hsl(var(--vip-orange-vibrant))',
+				},
+				// System Colors
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',

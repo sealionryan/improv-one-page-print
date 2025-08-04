@@ -2,41 +2,45 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* VIP Improv Brand Design System - All colors MUST be HSL */
 
 @layer base {
   :root {
+    /* Brand Colors */
+    --vip-purple: 248 22% 42%; /* #4e4489 */
+    --vip-purple-dark: 248 22% 32%;
+    --vip-purple-darker: 248 22% 22%;
+    --vip-purple-light: 248 22% 52%;
+    --vip-orange: 20 100% 73%; /* #FFA77A */
+    --vip-orange-light: 20 100% 83%;
+    --vip-orange-dark: 20 100% 63%;
+    --vip-orange-vibrant: 20 95% 68%;
+    
+    /* Gradients */
+    --vip-gradient: linear-gradient(135deg, hsl(var(--vip-purple-darker)), hsl(var(--vip-purple)));
+    --vip-accent-gradient: linear-gradient(45deg, hsl(var(--vip-orange)), hsl(var(--vip-orange-light)));
+    
+    /* Design System Colors */
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-
+    --foreground: 248 22% 22%;
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-
+    --card-foreground: 248 22% 22%;
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
+    --popover-foreground: 248 22% 22%;
+    --primary: 248 22% 42%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 20 100% 73%;
+    --secondary-foreground: 248 22% 22%;
+    --muted: 248 22% 96%;
+    --muted-foreground: 248 22% 52%;
+    --accent: 20 100% 73%;
+    --accent-foreground: 248 22% 22%;
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-
-    --radius: 0.5rem;
+    --destructive-foreground: 0 0% 100%;
+    --border: 248 22% 90%;
+    --input: 248 22% 90%;
+    --ring: 248 22% 42%;
+    --radius: 0.25rem;
 
     --sidebar-background: 0 0% 98%;
 
