@@ -1,7 +1,7 @@
-/* Print-specific styling to ensure the one-pager exports at exactly 8.5x11 inches (816x1056px) with no margins */
+/* Print-specific styling to ensure the one-pager exports at exactly 8.5x11 inches (612pt x 792pt) with no margins */
 @media print {
   @page {
-    size: 816px 1056px;
+    size: 612pt 792pt;
     margin: 0;
   }
   body {
