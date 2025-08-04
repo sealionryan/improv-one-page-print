@@ -20,22 +20,26 @@ const VIPOnePager = () => {
           <h2 className="text-base font-bold">How can Improv *IMPROVE* you and your team?</h2>
         </div>
 
-        {/* What is Improv Section */}
-        <div className="col-span-6 bg-vip-purple text-white p-3 rounded">
+        {/* What is Improv Section - Full Width Row */}
+        <div className="col-span-12 bg-vip-purple text-white p-3 rounded mb-1">
           <h3 className="text-sm font-bold mb-2">What is Improv?</h3>
-          <ul className="space-y-1 text-xs">
-            <li>• Improvisation is not just comedy – it's a way to cultivate vulnerability and connection within your team and beyond.</li>
-            <li>• Add an engaging and creative dimension to your personal and professional development!</li>
-          </ul>
+          <div className="grid grid-cols-2 gap-4">
+            <div>
+              <p className="text-xs">• Improvisation is not just comedy – it's a way to cultivate vulnerability and connection within your team and beyond.</p>
+            </div>
+            <div>
+              <p className="text-xs">• Add an engaging and creative dimension to your personal and professional development!</p>
+            </div>
+          </div>
         </div>
 
-        {/* What can Improv elevate Section */}
-        <div className="col-span-6 space-y-2">
+        {/* What can Improv elevate Section - Full Width Row */}
+        <div className="col-span-12 space-y-2 mb-2">
           <div className="bg-muted p-2 rounded">
             <h3 className="text-sm font-bold text-vip-purple mb-1">What can Improv elevate?</h3>
           </div>
           
-          <div className="grid grid-cols-2 gap-1">
+          <div className="grid grid-cols-4 gap-2">
             <div className="bg-vip-orange-light p-2 rounded">
               <h4 className="font-bold text-xs text-vip-purple-dark mb-1">Communication</h4>
               <p className="text-xs text-vip-purple-dark">Improv exercises offer experiential practice in speaking and listening, both verbally and non-verbally – learn how you come across to and perceive others.</p>
@@ -106,7 +110,7 @@ const VIPOnePager = () => {
         {/* Footer */}
         <div className="col-span-12 bg-vip-purple-darker text-white p-2 rounded text-center mt-1">
           <div className="flex items-center justify-center space-x-4">
-            <img src={vipLogoColor} alt="Vegas Improv Power" className="h-6" />
+            <img src={vipLogoWhite} alt="Vegas Improv Power" className="h-6" />
             <div className="text-xs">
               <p className="font-bold">Vegas Improv Power | Improv Comedy School in Las Vegas, NV</p>
               <p className="text-vip-orange">https://vegasimprov.com/</p>
